@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Actualizador de procesos judiciales TusDependientes.com</title>
+    <title>Actualiza.la </title>
     <style>
     body
     {
@@ -14,23 +14,59 @@
     </style>
   </head>
   <body>
-    <h1>Actualizador de procesos judiciales TusDependientes.com</h1>
-    <p>A través de este programa vas a actualizar los procesos de<strong> TusDependientes</strong>
-    <br/> Primero identifícate</p>
+    <h1>Actualiza.la TusDependientes.com</h1>
+    <p>A través de actualiza.la vas a actualizar los procesos de<strong> TusDependientes</strong>
+    <br/>Identifícate</p>
     <script>
     var ruta = window.location;
     var usuario = prompt("Cual es tu nombre?");
     document.write("Bienvenid@ " + usuario + "!!!!!!!");
     </script>
-    <h2>
-      Busca el siguiente proceso e ingresa en el cuadro de texto la actualización por favor:
-    <h2/>
-    <p>
-      Ingresa la Actualización en este cuadro de texto</br>
+    <h4>Vamos a actualizar los procesos en tres pasos</h4>
+
+    <hr />
+      <h4>1.) Busca el siguiente proceso e identifica los estados y actuaciones posteriores  en el cuadro de texto la actualización por favor:</h4>
+        <div class="table-wrapper">
+          <table class="alt">
+            <thead>
+              <tr>
+                <th><center>Numero de Proceso</center></th>
+                <th><center>Partes</center></th>
+                <th><center>Despacho actual</center></th>
+                <th><center>Ciudad o municipio</center></th>
+                <th><center>Actuaciones</center></th>
+                <th><center>Fecha de la ultima actuación</center></th>
+                <th><center>Pagina web para ubicarlo</center></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><center>11001100142520170062600</center></td>
+                <td><center>FNA Vs. Pepito Perez</center></td>
+                <td><center>Juzgado 34 civil del circuito</center></td>
+                <td><center>Bogotá D.C.</td>
+                <td><center>Auto libra mandamiento<br>Auto ordena medida cautelar <br>Se notica demandado</center></td>
+                <td><center>24-06-2018</center></td>
+                <td><center><a href="https://www.ramajudicial.gov.co" name="Pinche Aquí!" class="button"> Pinche aqui! </a></center></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <p><hr />
+      <h4>2. Ingresa la Actualización en este cuadro de texto</br></h4>
       <input type="text" name="Ingresa la Actualización aca" size="100" id="actualizacion">
-    </br><input type="date">
-    </br><input type="button" value="Actualizar" id="botoncito"/>
-      <script src="programa2.js"></script>
+      <hr/>
+      <h4> 3.) Escoge la fecha en que fue notificado el auto o actuación</h4>
+      <input type="date" name="3.) Escoge la fecha en que fue notificado el auto o actuación" size="100" id="fechaestado">
+      <input type="button" value="Actualizar" id="botoncito"/>
+    <hr />
+    <script src="programa2.js"></script>
     <p/>
+
   </body>
 </html>
